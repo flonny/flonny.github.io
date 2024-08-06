@@ -1,8 +1,13 @@
 <div id="app">
 屏幕宽度：<span id="sw"></span>
+dpr：<span id="dpr"></span>
 </div>
 <script>
-  const sw = window.screen.width;
-  document.querySelector('#sw').innerText = `${sw}`;
+  const swNumber = window.screen.width;
+  const dprNumber = window.devicePixelRatio
+  document.querySelector('#sw').innerText = `${swNumber}`;
+  document.querySelector('#dpr').innerText = `${dprNumber}`;
+  
+  
   alert(sw);
 </script>
