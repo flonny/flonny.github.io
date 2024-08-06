@@ -1,3 +1,7 @@
-<div>
-Hello World
+<div id="app">
+屏幕宽度：<span id="sw"></span>
 </div>
+<script>
+  const sw = window.screen.width
+  document.querySelector('#sw').innerText(`${sw}`)
+</script>
